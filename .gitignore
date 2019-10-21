@@ -10,7 +10,3 @@
 # PHP CS Fixer files
 /.php_cs
 /.php_cs.cache
-
-# PHPUnit files
-/.phpunit.xml
-/.phpunit.result.cache
