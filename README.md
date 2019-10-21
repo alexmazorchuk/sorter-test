@@ -9,13 +9,13 @@ Installation
 For using this library run execute the following command
 
 ```bash
-$ composer create-project alexmazorchuk/sorter-test project-name
+$ composer require alexmazorchuk/sorter-test project-name
 ```
 
 Usage
 -----
 
-Run tests/runSort.php
+TestRun
 
 ```bash
 $ php ./tests/runSort.php
