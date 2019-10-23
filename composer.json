@@ -3,7 +3,7 @@
   "description": "This is a test sorter library for array, integer or rows in PHP .",
   "keywords": ["test", "sort", "array", "integer", "string"],
   "type": "library",
-  "prefer-stable": true,"prefer-stable": true,
+  "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
@@ -20,12 +20,12 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "src/"
+      "Alexmazorchuk\\Sort\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "App\\Test\\": "tests/"
+      "Alexmazorchuk\\Sort\\Test\\": "tests/"
     }
   },
   "scripts": {

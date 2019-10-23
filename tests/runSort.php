@@ -2,17 +2,17 @@
 
 require_once __DIR__ . './../vendor/autoload.php';
 
-use App\MainSorter;
-use App\AscSort;
-use App\DescSort;
-use App\NullObject;
+use Alexmazorchuk\Sorter;
+use Alexmazorchuk\Sorter\Strategy\AscSort;
+use Alexmazorchuk\Sorter\Strategy\DescSort;
+use Alexmazorchuk\Sorter\Strategy\NullObject;
 
 $stringArray = ['Alexandr', 'Igor', 'Max', 'Oleg', 'Taras'];
 $numberArray = [1990, 1991, 1992, 2000, 2019];
 
-$ascSort = new MainSorter(new AscSort());
-$descSort = new MainSorter(new DescSort());
-$nullSort = new MainSorter(new NullObject());
+$ascSort = new Sorter(new AscSort());
+$descSort = new Sorter(new DescSort());
+$nullSort = new Sorter(new NullObject());
 
 $sorters = [$ascSort, $descSort, $nullSort];
 foreach ($sorters as $sort) {

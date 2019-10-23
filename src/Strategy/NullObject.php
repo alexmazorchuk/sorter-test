@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace  App;
+namespace Alexmazorchuk\Sorter\Strategy;
 
-final class NullObject implements MainInterface
+use Alexmazorchuk\Sorter\SortStrategyInterface;
+
+final class NullObject implements SortStrategyInterface
 {
-    public function sort(array $dataArray)
+    public function sort(array $dataArray):array
     {
         return $dataArray;
     }
